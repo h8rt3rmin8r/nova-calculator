@@ -43,7 +43,7 @@ and more efficient manner than is currently possible with existing bash tools.
   ```nova A 1.234 2.345```
 
   ### ${S} - SUBTRACT ONE NUMBER FROM ANOTHER NUMBER
-  ### Note: The 'S' parameter will only operate on two input numbers
+  Note: The 'S' parameter will only operate on two input numbers
   ```nova S ${FIRST_NUMBER} ${SECOND_NUMBER}```
   <br>
   ```nova S 1.234 2.345```
@@ -54,7 +54,7 @@ and more efficient manner than is currently possible with existing bash tools.
   ```nova M 1.234 2.345```
 
   ### ${D} - DIVIDE ONE NUMBER BY ANOTHER NUMBER
-  ### Note: The 'D' parameter will only operate on two input numbers
+  Note: The 'D' parameter will only operate on two input numbers
   ```nova D ${NUMERATOR} ${DENOMINATOR}```
   <br>
   ```nova D 1 2```
