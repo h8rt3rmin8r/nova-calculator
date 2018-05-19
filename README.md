@@ -22,11 +22,10 @@ _______________________________________________
 Nova calculator allows floating point arithmetic to be executed in bash in a faster
 and more efficient manner than is currently possible with existing bash tools.
 
-_______________________________________________
 
 ## USAGE SYNTAX:
 
-nova [parameter] <first_number> <second_number> ...
+```nova [parameter] <first_number> <second_number> ...```
 
 ## USAGE EXAMPLES:
 
@@ -35,28 +34,33 @@ nova [parameter] <first_number> <second_number> ...
 
   ### VIEW THE PROJECT README
   ```nova -h```
+  <br>
   ```nova --help```
 
   ### ${A} - ADD TWO OR MORE NUMBERS TOGETHER
   ```nova A ${FIRST_NUMBER} ${SECOND_NUMBER} ${N_NUMBER}```
+  <br>
   ```nova A 1.234 2.345```
 
   ### ${S} - SUBTRACT ONE NUMBER FROM ANOTHER NUMBER
   ### Note: The 'S' parameter will only operate on two input numbers
   ```nova S ${FIRST_NUMBER} ${SECOND_NUMBER}```
+  <br>
   ```nova S 1.234 2.345```
 
   ### ${M} - MULTIPLY TWO OR MORE NUMBERS TOGETHER
   ```nova M ${FIRST_NUMBER} ${SECOND_NUMBER} ${N_NUMBER}```
+  <br>
   ```nova M 1.234 2.345```
 
   ### ${D} - DIVIDE ONE NUMBER BY ANOTHER NUMBER
   ### Note: The 'D' parameter will only operate on two input numbers
   ```nova D ${NUMERATOR} ${DENOMINATOR}```
+  <br>
   ```nova D 1 2```
 
 Note: during pre-install testing, reference the core nova script with ./nova.sh
-_______________________________________________
+
 
 ## ATTRIBUTION:
 
@@ -66,7 +70,6 @@ Nova was created by the following ResoNova developers...
   - brettwy861
   - h8rt3rmin8r
 
-_______________________________________________
 
 ## DEPENDANCIES:
 
@@ -74,10 +77,8 @@ _______________________________________________
   - Python module: "Decimal"
   - dos2unix
 
-_______________________________________________
 
 ## FEEDBACK & BUG REPORTS:
 
 (Email) research@resonova.com
 
-_______________________________________________
