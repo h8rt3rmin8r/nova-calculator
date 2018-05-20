@@ -84,6 +84,7 @@ mv ${NOVASOURCE1}VERSIONS ${NOVASOURCE2}VERSIONS
 rm -rf ${HOME}/.nova/
 mkdir -p ${HOME}/.nova/; mkdir -p ${HOME}/.nova/logs/
 touch ${HOME}/.nova/logs/${TODAY}.log
+USER="`whoami`"; sudo chown -R ${USER}:${USER} ${HOME}/.nova
 
 # Exit installation script
 echo ${TODAY}" -- Installation complete!" > ${HOME}/.nova/logs/${TODAY}.log
