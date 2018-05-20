@@ -1,12 +1,13 @@
 #!/bin/bash
-######################################################################################
+################################################################################
 #  NOVA CALCULATOR  #
 #####################
 
-# Nova calculator allows floating point arithmetic to be executed in bash in a faster
-# and more efficient manner than is currently possible with existing bash tools.
+# Nova calculator allows floating point arithmetic to be executed in
+# bash in a faster and more efficient manner than is currently possible
+# with existing bash tools.
 
-######################################################################################
+################################################################################
 #  FUNCTIONS  #
 ###############
 
@@ -32,55 +33,75 @@ while test $# -gt 0; do
                         echo " "
                         echo "NOVA CALCULATOR"
                         echo " "
-                        echo "------------------------------------------------------------------------------------"
+                        echo "-------------------------------------------------------------------------"
                         echo " "
                         echo "DESCRIPTION:"
                         echo " "
-                        echo "  Nova calculator allows floating point arithmetic to be executed in bash in a faster"
-                        echo "  and more efficient manner than is currently possible with existing bash tools."
+                        echo "  Nova calculator allows floating point arithmetic to be executed in"
+                        echo "  bash in a faster and more efficient manner than is currently possible"
+                        echo "  with existing bash tools."
                         echo " "
-                        echo "------------------------------------------------------------------------------------"
+                        echo "-------------------------------------------------------------------------"
                         echo " "
                         echo "COMMAND SYNTAX:"
                         echo " "
                         echo "  nova [options] [number] [number]"
                         echo " "
-                        echo "------------------------------------------------------------------------------------"
+                        echo "-------------------------------------------------------------------------"
                         echo " "
                         echo "OPTIONS:"
                         echo " "
-                        echo "  -h, --help                    Show brief help"
-                        echo "  -r                            Print the project README file"
-                        echo "  -p                            Print the project ASCII banner"
-                        echo "  -v                            Print the version log"
-                        echo "  A [number] [number] ...       Add two or more numbers together"
-                        echo "  S [number] [number]           Subtract one number from another number"
-                        echo "  M [number] [number] ...       Multiply two or more numbers together"
-                        echo "  D [number] [number]           Divide one number by another number"
+                        echo "  -h, --help          Show brief help"
+                        echo "  -r, --readme        Print the project README file"
+                        echo "  -p, --print         Print the project ASCII banner"
+                        echo "  -v, --version       Print the version log"
+                        echo "  -L, --license       Print the software licence information"
+                        echo "  -A, A [#] [#]       Add numbers together"
+                        echo "  -S, S [#] [#]       Subtract one number from another number"
+                        echo "  -M, M [#] [#]       Multiply numbers together"
+                        echo "  -D, D [#] [#]       Divide one number by another number"
                         echo " "
-                        echo "------------------------------------------------------------------------------------"
+                        echo "-------------------------------------------------------------------------"
                         exit 0
                         ;;
-                -v)
+                        
+                -v|--version|--versions)
                         shift
-                        cat /usr/local/bin/nova-source/versions.txt
-                        shift
-                        ;;
-
-                -r)
-                        shift
-                        cat /usr/local/bin/nova-source/README.txt
+                        echo ""; \
+                            curl -s 'https://raw.githubusercontent.com/resonova/nova-calculator/master/nova-source/VERSIONS'; \
+                            echo ""; \
+                            echo ""
                         shift
                         ;;
 
-                -p)
+                -r|--readme)
                         shift
-                        cat /usr/local/bin/nova-source/print.txt
+                        echo ""; \
+                            curl -s 'https://raw.githubusercontent.com/resonova/nova-calculator/master/nova-source/README'; \
+                            echo ""; \
+                            echo ""
+                        shift
+                        ;;
+
+                -p|--print)
+                        shift
+                        echo ""; \
+                            curl -s 'https://pastebin.com/raw/dtVQTHhs'; \
+                            echo ""; \
+                            echo ""
+                        shift
+                        ;;
+                        
+                -L|--license)     
+                        shift
+                        echo ""; \
+                            curl -s 'https://pastebin.com/raw/Fqbwgcvv'; \
+                            echo ""
                         shift
                         ;;
 
                 *)
-                        ./usr/local/bin/nova-source/nova.py "${1}" "${2} ${3}"
+                        /usr/local/bin/nova-source/nova.py "${1}" "${2} ${3}"
                         break
                         ;;
         esac
