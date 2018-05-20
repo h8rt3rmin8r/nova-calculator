@@ -1,21 +1,7 @@
 # NOVA CALCULATOR
 Simple floating point arithmetic program for the bash command line
 
-```
-_______________________________________________
-:::.    :::.    ...    :::      .::.:::.     
-`;;;;,  `;;; .;;;;;;;. ';;,   ,;;;' ;;`;;    
-  [[[[[. '[[,[[     \[[,\[[  .[[/  ,[[ '[[,  
-  $$$ "Y$c$$$$$,     $$$ Y$c.$$"  c$$$cc$$$c 
-  888    Y88"888,_ _,88P  Y88P     888   888,
-  MMM     YM  "YMMMMMP"    MP      YMM   ""` 
-           _            _       _             
-  ___ __ _| | ___ _   _| | __ _| |_ ___  _ __ 
- / __/ _` | |/ __| | | | |/ _` | __/ _ \| '__|
-| (_| (_| | | (__| |_| | | (_| | || (_) | |   
- \___\__,_|_|\___|\__,_|_|\__,_|\__\___/|_|   
-_______________________________________________
-```
+![nova calculator](https://resonova.github.io/nova-calculator/images/nova-calculator.png "The Nova bash calculator")
 
 ## DESCRIPTION:
 
