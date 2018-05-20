@@ -32,11 +32,11 @@ Run the following commands in your terminal to install nova:
   <br>
   ```nova --help```
 
-  ### ${A} - ADD TWO OR MORE NUMBERS TOGETHER
+  ### ${A} - ADD NUMBERS TOGETHER
   
   You can pass either 'A' or the flag '-A' as a parameter
   
-  ```nova A ${FIRST_NUMBER} ${SECOND_NUMBER} ${N_NUMBER}```
+  ```nova A ${FIRST_NUMBER} ${SECOND_NUMBER}```
   <br>
   ```nova A 1.234 2.345```
 
@@ -48,11 +48,11 @@ Run the following commands in your terminal to install nova:
   <br>
   ```nova S 1.234 2.345```
 
-  ### ${M} - MULTIPLY TWO OR MORE NUMBERS TOGETHER
+  ### ${M} - MULTIPLY NUMBERS TOGETHER
   
   You can pass either 'M' or the flag '-M' as a parameter
   
-  ```nova M ${FIRST_NUMBER} ${SECOND_NUMBER} ${N_NUMBER}```
+  ```nova M ${FIRST_NUMBER} ${SECOND_NUMBER}```
   <br>
   ```nova M 1.234 2.345```
 
@@ -63,9 +63,6 @@ Run the following commands in your terminal to install nova:
   ```nova D ${NUMERATOR} ${DENOMINATOR}```
   <br>
   ```nova D 1 2```
-
-Note: during pre-install testing, reference the core nova script with ./nova.sh
-
 
 ## ATTRIBUTION:
 
