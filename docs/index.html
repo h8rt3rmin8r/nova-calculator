@@ -72,79 +72,115 @@
         </div>
     </div>
     <div class="container">
-        <h2 id="description-">DESCRIPTION:</h2>
-        <p>Nova calculator allows floating point arithmetic to be executed in bash in a faster and more efficient manner than
-            is currently possible with existing bash tools.</p>
-        <h2 id="usage-syntax-">USAGE SYNTAX:</h2>
-        <p>
-            <code>nova [parameter] &lt;first_number&gt; &lt;second_number&gt; ...</code>
-        </p>
-        <h2 id="usage-examples-">USAGE EXAMPLES:</h2>
-        <h3 id="read-the-version-log">READ THE VERSION LOG</h3>
-        <p>
-            <code>nova -v</code>
-        </p>
-        <h3 id="view-the-project-readme">VIEW THE PROJECT README</h3>
-        <p>
-            <code>nova -h</code>
-            <br>
-            <code>nova --help</code>
-        </p>
-        <h3 id="-a-add-two-or-more-numbers-together">${A} - ADD TWO OR MORE NUMBERS TOGETHER</h3>
-        <p> You can pass either &#39;A&#39; or the flag &#39;-A&#39; as a parameter</p>
-        <p>
-            <code>nova A ${FIRST_NUMBER} ${SECOND_NUMBER} ${N_NUMBER}</code>
-            <br>
-            <code>nova A 1.234 2.345</code>
-        </p>
-        <h3 id="-s-subtract-one-number-from-another-number">${S} - SUBTRACT ONE NUMBER FROM ANOTHER NUMBER</h3>
-        <p> The &#39;S&#39; parameter will only operate on two input numbers You can pass either &#39;S&#39; or the flag &#39;-S&#39;
-            as a parameter</p>
-        <p>
-            <code>nova S ${FIRST_NUMBER} ${SECOND_NUMBER}</code>
-            <br>
-            <code>nova S 1.234 2.345</code>
-        </p>
-        <h3 id="-m-multiply-two-or-more-numbers-together">${M} - MULTIPLY TWO OR MORE NUMBERS TOGETHER</h3>
-        <p> You can pass either &#39;M&#39; or the flag &#39;-M&#39; as a parameter</p>
-        <p>
-            <code>nova M ${FIRST_NUMBER} ${SECOND_NUMBER} ${N_NUMBER}</code>
-            <br>
-            <code>nova M 1.234 2.345</code>
-        </p>
-        <h3 id="-d-divide-one-number-by-another-number">${D} - DIVIDE ONE NUMBER BY ANOTHER NUMBER</h3>
-        <p> The &#39;D&#39; parameter will only operate on two input numbers You can pass either &#39;D&#39; or the flag &#39;-D&#39;
-            as a parameter</p>
-        <p>
-            <code>nova D ${NUMERATOR} ${DENOMINATOR}</code>
-            <br>
-            <code>nova D 1 2</code>
-        </p>
-        <p>Note: during pre-install testing, reference the core nova script with ./nova.sh</p>
-        <h2 id="attribution-">ATTRIBUTION:</h2>
-        <p>Nova was created by the following ResoNova developers...</p>
-        <ul>
-            <li>kryptomuncher</li>
-            <li>brettwy861</li>
-            <li>h8rt3rmin8r</li>
-        </ul>
-        <h2 id="dependancies-">DEPENDANCIES:</h2>
-        <ul>
-            <li>
-                <a href="https://www.python.org/download/releases/2.7/">Python 2.7</a>
-            </li>
-            <li>
-                <a href="https://pypi.org/project/pip/">pip 10.0</a>
-            </li>
-            <li>
-                <a href="https://docs.python.org/2/library/decimal.html">decimal 9.4</a>
-            </li>
-            <li>
-                <a href="https://linux.die.net/man/1/dos2unix">dos2unix</a>
-            </li>
-        </ul>
-        <h2 id="feedback-bug-reports-">FEEDBACK &amp; BUG REPORTS:</h2>
-        <p>(Email) research@resonova.com</p>
+        <div class="card">
+            <div class="card-title">
+                <h2 id="description-">DESCRIPTION:</h2>
+            </div>
+            <div class="card-text">
+                <p>Nova calculator allows floating point arithmetic to be executed in bash in a faster and more efficient manner
+                    than is currently possible with existing bash tools.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <h2 id="usage-syntax-">USAGE SYNTAX:</h2>
+            </div>
+            <div class="card-text">
+                <p>
+                    <code>nova [parameter] &lt;first_number&gt; &lt;second_number&gt; ...</code>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <h2 id="usage-examples-">USAGE EXAMPLES:</h2>
+            </div>
+            <div class="card-text">
+                <h3 id="read-the-version-log">READ THE VERSION LOG</h3>
+                <p>
+                    <code>nova -v</code>
+                </p>
+                <h3 id="view-the-project-readme">VIEW THE PROJECT README</h3>
+                <p>
+                    <code>nova -h</code>
+                    <br>
+                    <code>nova --help</code>
+                </p>
+                <h3 id="-a-add-two-or-more-numbers-together">${A} - ADD TWO OR MORE NUMBERS TOGETHER</h3>
+                <p> You can pass either &#39;A&#39; or the flag &#39;-A&#39; as a parameter</p>
+                <p>
+                    <code>nova A ${FIRST_NUMBER} ${SECOND_NUMBER} ${N_NUMBER}</code>
+                    <br>
+                    <code>nova A 1.234 2.345</code>
+                </p>
+                <h3 id="-s-subtract-one-number-from-another-number">${S} - SUBTRACT ONE NUMBER FROM ANOTHER NUMBER</h3>
+                <p> The &#39;S&#39; parameter will only operate on two input numbers You can pass either &#39;S&#39; or the flag
+                    &#39;-S&#39; as a parameter</p>
+                <p>
+                    <code>nova S ${FIRST_NUMBER} ${SECOND_NUMBER}</code>
+                    <br>
+                    <code>nova S 1.234 2.345</code>
+                </p>
+                <h3 id="-m-multiply-two-or-more-numbers-together">${M} - MULTIPLY TWO OR MORE NUMBERS TOGETHER</h3>
+                <p> You can pass either &#39;M&#39; or the flag &#39;-M&#39; as a parameter</p>
+                <p>
+                    <code>nova M ${FIRST_NUMBER} ${SECOND_NUMBER} ${N_NUMBER}</code>
+                    <br>
+                    <code>nova M 1.234 2.345</code>
+                </p>
+                <h3 id="-d-divide-one-number-by-another-number">${D} - DIVIDE ONE NUMBER BY ANOTHER NUMBER</h3>
+                <p> The &#39;D&#39; parameter will only operate on two input numbers You can pass either &#39;D&#39; or the flag
+                    &#39;-D&#39; as a parameter</p>
+                <p>
+                    <code>nova D ${NUMERATOR} ${DENOMINATOR}</code>
+                    <br>
+                    <code>nova D 1 2</code>
+                </p>
+                <p>Note: during pre-install testing, reference the core nova script with ./nova.sh</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <h2 id="attribution-">ATTRIBUTION:</h2>
+            </div>
+            <div class="card-text">
+                <p>Nova was created by the following ResoNova developers...</p>
+                <ul>
+                    <li>kryptomuncher</li>
+                    <li>brettwy861</li>
+                    <li>h8rt3rmin8r</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <h2 id="dependancies-">DEPENDANCIES:</h2>
+            </div>
+            <div class="card-text">
+                <ul>
+                    <li>
+                        <a href="https://www.python.org/download/releases/2.7/">Python 2.7</a>
+                    </li>
+                    <li>
+                        <a href="https://pypi.org/project/pip/">pip 10.0</a>
+                    </li>
+                    <li>
+                        <a href="https://docs.python.org/2/library/decimal.html">decimal 9.4</a>
+                    </li>
+                    <li>
+                        <a href="https://linux.die.net/man/1/dos2unix">dos2unix</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <h2 id="feedback-bug-reports-">FEEDBACK &amp; BUG REPORTS:</h2>
+            </div>
+            <div class="card-text">
+                <p>(Email) research@resonova.com</p>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
