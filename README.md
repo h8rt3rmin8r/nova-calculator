@@ -49,7 +49,6 @@ and more efficient manner than is currently possible with existing bash tools.
 
   ### ${S} - SUBTRACT ONE NUMBER FROM ANOTHER NUMBER
   
-  The 'S' parameter will only operate on two input numbers
   You can pass either 'S' or the flag '-S' as a parameter
   
   ```nova S ${FIRST_NUMBER} ${SECOND_NUMBER}```
@@ -66,7 +65,6 @@ and more efficient manner than is currently possible with existing bash tools.
 
   ### ${D} - DIVIDE ONE NUMBER BY ANOTHER NUMBER
   
-  The 'D' parameter will only operate on two input numbers
   You can pass either 'D' or the flag '-D' as a parameter
   
   ```nova D ${NUMERATOR} ${DENOMINATOR}```
