@@ -8,6 +8,13 @@ Simple floating point arithmetic program for the bash command line
 Nova calculator allows floating point arithmetic to be executed in bash in a faster
 and more efficient manner than is currently possible with existing bash tools.
 
+## INSTALL:
+
+Run the following commands in your terminal to install nova:
+
+```wget -q https://resonova.github.io/nova-calculator/downloads/install-nova.sh```
+<br>
+```sudo chmod +x install-nova.sh; sudo ./install-nova.sh```
 
 ## USAGE SYNTAX:
 
