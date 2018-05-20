@@ -63,37 +63,33 @@ while test $# -gt 0; do
                         ;;
                 -v)
                         shift
-                        cat nova-source/versions.txt
+                        cat /usr/local/bin/nova-source/versions.txt
                         shift
                         ;;
 
                 -r)
                         shift
-                        cat nova-source/README.txt
+                        cat /usr/local/bin/nova-source/README.txt
                         shift
                         ;;
 
                 -p)
                         shift
-                        cat nova-source/print.txt
+                        cat /usr/local/bin/nova-source/print.txt
                         shift
                         ;;
 
                 *)
-                        ./nova-source/nova.py "${1}" "${2} ${3}"
+                        ./usr/local/bin/nova-source/nova.py "${1}" "${2} ${3}"
                         break
                         ;;
         esac
 done
 
-
-
-#case "${1}#${2}#${3}" in
-
-#    "${VAR}#${VAR2}#${VAR3}") ./nova.py "${1}" "${2} ${3}"
- #                             echo "1";;
-  #  "${VAR}#"*) ./nova.py "${1}" "`cat ${2}` `echo ${3}`" ;;
-   # *"#${VAR3}") ./nova.py "${1}" "`echo ${2}` `cat ${3}`";;
-    #"${1}#${2}#${3}") ./nova.py "${1}" "`cat ${22}` `cat ${S3}`";;
-    
-#esac
+################################################################################
+                                                   #                           #
+                                                   #  "think outside the box"  #
+                                                   #                           #
+                                                   #    ($) ¯\_(ツ)_/¯ (฿)     #
+                                                   #                           #
+                                                   #############################
