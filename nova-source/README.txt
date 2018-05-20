@@ -33,8 +33,8 @@ USAGE EXAMPLES:
   nova -h
   nova --help
 
-  # ${A} - ADD TWO OR MORE NUMBERS TOGETHER
-  nova A ${FIRST_NUMBER} ${SECOND_NUMBER} ${N_NUMBER}
+  # ${A} - ADD NUMBERS TOGETHER
+  nova A ${FIRST_NUMBER} ${SECOND_NUMBER}
   nova A 1.234 2.345
 
   # ${S} - SUBTRACT ONE NUMBER FROM ANOTHER NUMBER
@@ -42,8 +42,8 @@ USAGE EXAMPLES:
   nova S ${FIRST_NUMBER} ${SECOND_NUMBER}
   nova S 1.234 2.345
 
-  # ${M} - MULTIPLY TWO OR MORE NUMBERS TOGETHER
-  nova M ${FIRST_NUMBER} ${SECOND_NUMBER} ${N_NUMBER}
+  # ${M} - MULTIPLY NUMBERS TOGETHER
+  nova M ${FIRST_NUMBER} ${SECOND_NUMBER}
   nova M 1.234 2.345
 
   # ${D} - DIVIDE ONE NUMBER BY ANOTHER NUMBER
@@ -56,7 +56,7 @@ _______________________________________________
 
 ATTRIBUTION:
 
-Nova was created by the following developers...
+Nova was created by the following ResoNova developers...
 
   - kryptomuncher
   - brettwy861
@@ -66,9 +66,10 @@ _______________________________________________
 
 DEPENDANCIES:
 
-  - Python 2.7
-  - Python module: "Decimal"
-  - dos2unix
+  - Python 2.7 (https://www.python.org/download/releases/2.7/)
+  - pip 10.0 (https://pypi.org/project/pip/)
+  - Decimal 9.4 (https://docs.python.org/2/library/decimal.html)
+  - dos2unix (https://linux.die.net/man/1/dos2unix)
 
 _______________________________________________
 
