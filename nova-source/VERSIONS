@@ -1,0 +1,14 @@
+#########################################################################
+#  NOVA CALCULATOR  #
+#  VERSIONS LOG     #
+#####################
+
+20180517 - v.0.1 - Initial release
+20180519 - v.1.0 - Passed initial testing
+20180519 - v.1.1 - Cleaned up directory and added version log and README 
+20180519 - v.1.2 - Added -v and -h tag
+20180519 - v.1.3 - Resolved errors on nova.sh line 37; added -p tag
+20180519 - v.1.4 - $1(operator argument)can now be a flag
+20180519 - v.1.5 - Added install.sh and established GitHub repository
+
+#########################################################################
