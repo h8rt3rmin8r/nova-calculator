@@ -9,6 +9,7 @@ SOURCE2='/usr/local/bin/'
 NOVASOURCE1=${HOME}'/.nova/nova-calculator-master/nova-source/'
 NOVASOURCE2='/usr/local/bin/nova-source/'
 SOURCE_CODE='https://github.com/resonova/nova-calculator/archive/master.zip'
+TODAY="`TZ=America/New_York date '+%Y%m%d' | head -c -1`"
 
 # Verify root access
 uid=`id -u $USERNAME`
@@ -21,8 +22,7 @@ if [ "$uid" == "0" ]
         echo ""
     else
         echo ""
-        echo "install.sh: You need to have root access, run again in sudo"
-        echo "                Operate as root with the command, 'sudo -s'"
+        echo "install.sh: You need to have root access, run again with 'sudo'"
     exit 1
 fi
 
@@ -80,11 +80,13 @@ mv ${NOVASOURCE1}VERSIONS ${NOVASOURCE2}VERSIONS
 # POSSIBLE BUGS EXIST IN ACCESS PROVISIONS
 #chmod -R 777 /usr/local/bin
 
-# Clean up the workspace
+# Clean up the workspace and generate error log
 rm -rf ${HOME}/.nova/
+mkdir -p ${HOME}/.nova/; mkdir -p ${HOME}/.nova/logs/
+touch ${HOME}/.nova/logs/${TODAY}.log
 
 # Exit installation script
-echo "Installation complete!"
+echo ${TODAY}" -- Installation complete!" > ${HOME}/.nova/logs/${TODAY}.log
 exit
 
 ################################################################################
