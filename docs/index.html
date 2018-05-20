@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>README</title>
+    <meta name="description" content="README documentation for the Nova bash calculator">
+
+    <!-- ****** FAVICONS AND BRANDING ****** -->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://h8rt3rmin8r.com/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://h8rt3rmin8r.com/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://h8rt3rmin8r.com/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://h8rt3rmin8r.com/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://h8rt3rmin8r.com/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://h8rt3rmin8r.com/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://h8rt3rmin8r.com/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://h8rt3rmin8r.com/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://h8rt3rmin8r.com/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="http://h8rt3rmin8r.com/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://h8rt3rmin8r.com/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="http://h8rt3rmin8r.com/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://h8rt3rmin8r.com/images/favicon-16x16.png">
+    <link rel="manifest" href="http://h8rt3rmin8r.com/images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="http://h8rt3rmin8r.com/images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="http://h8rt3rmin8r.com/images/images/android-icon-192x192.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="README">
+    <link rel="apple-touch-icon-precomposed" href="http://h8rt3rmin8r.com/images/images/apple-icon-precomposed.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="http://h8rt3rmin8r.com/images/images/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <link rel="shortcut icon" href="http://h8rt3rmin8r.com/images/images/favicon.png">
+
+    <style>
+        button {
+            min-width: 110px;
+            min-height: 26px;
+        }
+    </style>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/solar/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 id="nova-calculator">NOVA CALCULATOR</h1>
+            <p>Simple floating point arithmetic program for the bash command line</p>
+            <pre><code><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span>__
+:::.    :::.    ...    :::      .::.:::.     
+<span class="hljs-code">`;;;;,  `</span>;;; .;;;;;;;. ';;,   ,;;;' ;;`;;    
+  [[[[[. '[[,[[     \[[,\[[  .[[/  ,[[ '[[,  
+  $$$ "Y$c$$$$$,     $$$ Y$c.$$"  c$$$cc$$$c 
+  888    Y88"888,<span class="hljs-emphasis">_ _</span>,88P  Y88P     888   888,
+  MMM     YM  "YMMMMMP"    MP      YMM   ""` 
+<span class="hljs-code">           _            _       _             </span>
+  <span class="hljs-strong">___ __</span> <span class="hljs-emphasis">_| | _</span><span class="hljs-strong">__ _   _| | __</span> <span class="hljs-emphasis">_| |_</span> <span class="hljs-strong">___  _ __</span> 
+ / <span class="hljs-strong">__/ _` | |/ __</span>| | | | |/ <span class="hljs-emphasis">_` | _</span><span class="hljs-emphasis">_/ _</span> \| '__|
+| (<span class="hljs-emphasis">_| (_</span>| | | (<span class="hljs-emphasis">__| |_</span>| | | (<span class="hljs-emphasis">_| | || (_</span>) | |   
+ \<span class="hljs-strong">___\__</span>,<span class="hljs-emphasis">_|_</span>|\<span class="hljs-strong">___|\__</span>,<span class="hljs-emphasis">_|_</span>|\<span class="hljs-strong">__,_|\__</span>\<span class="hljs-emphasis">___</span>/|_|   
+<span class="hljs-strong">_____</span><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span><span class="hljs-strong">_____</span>__
+</code></pre>
+            <a role="button" class="btn btn-info" href="https://github.com/resonova/nova-calculator/">Fork on GitHub</a>
+            <a role="button" class="btn btn-secondary" href="https://github.com/resonova/nova-calculator/archive/master.zip">Download Project</a>
+            <a role="button" class="btn btn-success" href="https://resonova.com">About the Team</a>
+        </div>
+    </div>
+    <div class="container">
+        <h2 id="description-">DESCRIPTION:</h2>
+        <p>Nova calculator allows floating point arithmetic to be executed in bash in a faster and more efficient manner than
+            is currently possible with existing bash tools.</p>
+        <h2 id="usage-syntax-">USAGE SYNTAX:</h2>
+        <p>
+            <code>nova [parameter] &lt;first_number&gt; &lt;second_number&gt; ...</code>
+        </p>
+        <h2 id="usage-examples-">USAGE EXAMPLES:</h2>
+        <h3 id="read-the-version-log">READ THE VERSION LOG</h3>
+        <p>
+            <code>nova -v</code>
+        </p>
+        <h3 id="view-the-project-readme">VIEW THE PROJECT README</h3>
+        <p>
+            <code>nova -h</code>
+            <br>
+            <code>nova --help</code>
+        </p>
+        <h3 id="-a-add-two-or-more-numbers-together">${A} - ADD TWO OR MORE NUMBERS TOGETHER</h3>
+        <p> You can pass either &#39;A&#39; or the flag &#39;-A&#39; as a parameter</p>
+        <p>
+            <code>nova A ${FIRST_NUMBER} ${SECOND_NUMBER} ${N_NUMBER}</code>
+            <br>
+            <code>nova A 1.234 2.345</code>
+        </p>
+        <h3 id="-s-subtract-one-number-from-another-number">${S} - SUBTRACT ONE NUMBER FROM ANOTHER NUMBER</h3>
+        <p> The &#39;S&#39; parameter will only operate on two input numbers You can pass either &#39;S&#39; or the flag &#39;-S&#39;
+            as a parameter</p>
+        <p>
+            <code>nova S ${FIRST_NUMBER} ${SECOND_NUMBER}</code>
+            <br>
+            <code>nova S 1.234 2.345</code>
+        </p>
+        <h3 id="-m-multiply-two-or-more-numbers-together">${M} - MULTIPLY TWO OR MORE NUMBERS TOGETHER</h3>
+        <p> You can pass either &#39;M&#39; or the flag &#39;-M&#39; as a parameter</p>
+        <p>
+            <code>nova M ${FIRST_NUMBER} ${SECOND_NUMBER} ${N_NUMBER}</code>
+            <br>
+            <code>nova M 1.234 2.345</code>
+        </p>
+        <h3 id="-d-divide-one-number-by-another-number">${D} - DIVIDE ONE NUMBER BY ANOTHER NUMBER</h3>
+        <p> The &#39;D&#39; parameter will only operate on two input numbers You can pass either &#39;D&#39; or the flag &#39;-D&#39;
+            as a parameter</p>
+        <p>
+            <code>nova D ${NUMERATOR} ${DENOMINATOR}</code>
+            <br>
+            <code>nova D 1 2</code>
+        </p>
+        <p>Note: during pre-install testing, reference the core nova script with ./nova.sh</p>
+        <h2 id="attribution-">ATTRIBUTION:</h2>
+        <p>Nova was created by the following ResoNova developers...</p>
+        <ul>
+            <li>kryptomuncher</li>
+            <li>brettwy861</li>
+            <li>h8rt3rmin8r</li>
+        </ul>
+        <h2 id="dependancies-">DEPENDANCIES:</h2>
+        <ul>
+            <li>
+                <a href="https://www.python.org/download/releases/2.7/">Python 2.7</a>
+            </li>
+            <li>
+                <a href="https://pypi.org/project/pip/">pip 10.0</a>
+            </li>
+            <li>
+                <a href="https://docs.python.org/2/library/decimal.html">decimal 9.4</a>
+            </li>
+            <li>
+                <a href="https://linux.die.net/man/1/dos2unix">dos2unix</a>
+            </li>
+        </ul>
+        <h2 id="feedback-bug-reports-">FEEDBACK &amp; BUG REPORTS:</h2>
+        <p>(Email) research@resonova.com</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
