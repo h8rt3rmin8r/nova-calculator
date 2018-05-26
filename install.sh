@@ -10,6 +10,7 @@
 #------------------------------------------------------------------------------#
 
 # Establish variables
+USER="`sudo echo ${HOME} | cut -c 7-`"
 SOURCE_CODE='https://github.com/resonova/nova-calculator/archive/master.zip'
 TODAY="`date '+%Y%m%d' | head -c -1`"
 NOW="`date '+%Y%m%d-%H%M%S' | head -c -1`"
@@ -94,7 +95,6 @@ rm -rf ${SOURCE}
 mkdir -p ${SOURCE}
 mkdir -p ${SOURCE}logs/
 touch ${SOURCE}logs/${TODAY}.log
-USER="`whoami`"
 sudo chown -R ${USER}:${USER} ${HOME}/.software/
 
 # Exit installation script
