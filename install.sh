@@ -3,7 +3,7 @@
 #  Install nova  #
 #----------------#
 #------------------------------------------------------------------------------#
-# Source:        https://
+# Source:        https://pastebin.com/raw/61fHwRCC
 # Source Code:   https://github.com/resonova/nova-calculator/archive/master.zip
 # Created by:    h8rt3rmin8r
 # Date:          20180520
