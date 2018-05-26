@@ -13,7 +13,7 @@
 
 TODAY="`TZ=America/New_York date '+%Y%m%d' | head -c -1`"
 NOVA_SOURCE='/usr/local/bin/nova-source/'
-LOG=${HOME}'/.nova/logs/'${TODAY}'.log'
+LOG=${HOME}'/.software/nova/logs/'${TODAY}'.log'
 
 ROOT1='https://raw.githubusercontent.com/'
 ROOT2='https://pastebin.com/raw/'
